@@ -1,0 +1,81 @@
+/* TodoItem.css */
+
+/* Container of each Todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+/* On hover, slightly highlight */
+.todo-item:hover {
+  background-color: rgba(0, 0, 0, 0.04); /* Light hover for both themes */
+}
+
+/* Text styling */
+.todo-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #424242;
+  flex-grow: 1;
+  margin-left: 12px;
+}
+
+/* Completed task text strikethrough */
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #9e9e9e;
+}
+
+/* Priority Rating container spacing */
+.todo-priority {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox alignment */
+.todo-checkbox {
+  margin-right: 12px;
+}
+
+/* IconButton styling (Comment/Delete) */
+.todo-icon {
+  color: #9e9e9e;
+  transition: color 0.8s ease;
+}
+
+.todo-icon:hover {
+  color: #e53935; /* red on hover */
+}
+.todo-priority {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 0 8px; */
+}
+
+.priority-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  /* margin-top: 4px; */
+}
+/* TodoItem.css */
+
+.todo-card {
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+  
+  .completed-task {
+    color: gray;
+    text-decoration: line-through;
+  }
+#component-box{
+  gap: 15px;
+}
