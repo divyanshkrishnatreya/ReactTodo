@@ -2,10 +2,11 @@
 
 /* Container of each Todo item */
 .todo-item {
-  display: flex;
+  max-height: 0.5rem;
+  display: block;
   align-items: center;
   justify-content: space-between;
-  padding: 12px;
+  padding: 5px;
   border-bottom: 1px solid #e0e0e0;
   transition: background-color 0.3s ease;
 }
@@ -77,5 +78,5 @@
     text-decoration: line-through;
   }
 #component-box{
-  gap: 15px;
+  padding: 0px !important;
 }

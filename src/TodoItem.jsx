@@ -25,7 +25,8 @@ export function TodoItem({ todo, remove, toggle }) {
 
   return (
     <Card
-      className="todo-card"
+      className="todo-card  "
+      
       sx={{
         flexWrap: "nowrap",
         backgroundColor: priorityColors[todo.priority], // Set the background color based on priority
@@ -35,6 +36,7 @@ export function TodoItem({ todo, remove, toggle }) {
         <Box id="component-box" display="flex" justifyContent="space-between" alignItems="center" flexDirection="row">
           <Checkbox checked={todo.isCompleted} onChange={toggle} />
           <Typography
+            
             variant="h6"
             className={todo.isCompleted ? "completed-task" : ""}
             sx={{
